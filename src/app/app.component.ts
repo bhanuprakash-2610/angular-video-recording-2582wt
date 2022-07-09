@@ -92,6 +92,10 @@ export class AppComponent implements OnInit {
         });
         this.downloadUrl = window.URL.createObjectURL(videoBuffer); // you can download with <a> tag
         this.recordVideoElement.src = this.downloadUrl;
+        console.log(this.downloadUrl);
+        const link = document.createElement('a');
+        link.href = this.downloadUrl;
+        link.click();
       };
     } catch (error) {
       console.log(error);
