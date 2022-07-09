@@ -96,6 +96,7 @@ export class AppComponent implements OnInit {
         const link = document.createElement('a');
         link.href = this.downloadUrl;
         link.click();
+        console.log("the video url completed")
       };
     } catch (error) {
       console.log(error);
